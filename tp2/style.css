@@ -1,0 +1,60 @@
+body{
+
+    background-color: lightgrey;              
+
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+
+    font-size: 16px;
+
+    margin: 0 auto;
+
+    max-width: 800px;              
+
+}
+
+
+.personne {
+    width: 500px;
+    margin-bottom: 20px;
+}
+.dbk div {
+    height: 30px;
+}
+
+
+.dbk label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+.date {
+    width: 168px;
+}
+
+.validation {
+    margin-left: 153px;
+    border-radius: 3px;
+}
+  
+.message {
+    width: 500px;
+}
+.error{
+    height: 28px !important;
+    background-color: pink;
+    padding: 5px;
+    border: 1px solid black
+}
+
+.valide{
+    height: 28px !important;
+    font-family: Times;
+    background-color: green;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
