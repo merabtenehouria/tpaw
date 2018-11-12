@@ -1,33 +1,99 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>TP3</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="js/jquery-3.2.1.slim.min.js"></script>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+      <!-- CSS boostrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
+      <script src="js/popper.min.js"></script>
+      <script src="js/form-jquery-validation.js"></script>
+      <link rel="stylesheet" href="css/jquery-ui.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+      <script src="js/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" href="css/style.css">
+        <script>
+          $( function() {
+            $( "#datepicker" ).datepicker();
+          } );
+          </script>
     </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+    
+
+    <!-- FIN  ************************ html de notre modale qui va s'ouvrir en popine  ****************************************  -->
+    <body style="margin-top: 10px;" >
+      <div class="container">
+        <h1>Formulaire version 2 : Jquery </h1>
+        <form> 
+            <div class="form-group row">
+                <label for="nom" class="col-sm-3 col-form-label">Nom :</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="nom">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="prenom" class="col-sm-3 col-form-label">Prénom :</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="prenom">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="dateNaissance" class="col-sm-3 col-form-label">Date de naissance :</label>
+                <div class="col-sm-5">
+                  <input type="date" class="form-control" id="dateNaissance">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="adresse" class="col-sm-3 col-form-label">Adresse :</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="adresse">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-sm-3 col-form-label">Mail :</label>
+                <div class="col-sm-5">
+                  <input type="email" class="form-control" id="email" placeholder="aaa@gmail.com">
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" id="myBtn">Valider</button>
+             <br>
+             <br>
+             <br>
+             <div class="form-group row">
+                <label for="email" class="col-sm-3 col-form-label">Jquery calendar :</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control"  id="datepicker">
+                </div>
+              </div>
+          </form>
+        <div class="modal" tabindex="-1" role="dialog" id="myModal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                 <div id="date"></div>
+                  <div id="invalide" class="invalide"></div>
+                  <div class="detail-adresse" id="detail-adresse"></div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
     </body>
 </html>
