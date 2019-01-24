@@ -14,7 +14,7 @@ export class MeteoService {
       .then(function (response) {
         return response.json();
       })
-      .then(function (json) {
+      .then(function (json) { 
 
         // test du code retour
         // 200 = OK

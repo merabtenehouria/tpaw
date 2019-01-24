@@ -16,7 +16,7 @@ export class MeteoDetailComponent implements OnInit {
     private meteoService: MeteoService,
     //private location: Location
   ) {}
-
+  
   ngOnInit() {
     this.getMeteo();
   }

@@ -11,7 +11,7 @@ export class MeteoComponent implements OnInit {
   city: MeteoItem = {
     name: '',
     id: null,
-    weather: null
+    weather: null 
   };
 
   cityList: any;

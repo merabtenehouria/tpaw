@@ -1,5 +1,5 @@
 export class MeteoItem {
     id: number;
     name: string;
-    weather: any
+    weather: any 
 }

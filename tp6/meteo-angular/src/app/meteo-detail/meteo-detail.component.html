@@ -12,7 +12,7 @@
   </nav>
 
   <div class="card" style="width:300px; margin: 0 auto" v-if="meteo">
-    <div class="card-header">
+    <div class="card-header"> 
       {{meteo.name}} @{{meteo.dt | date:'H:mm'}}
     </div>
     <img class="card-img-top" src="https://maps.googleapis.com/maps/api/staticmap?markers={{meteo.coord.lat}},{{meteo.coord.lon}}&zoom=5&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"

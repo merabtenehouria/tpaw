@@ -16,7 +16,7 @@ const appRoutes: Routes = [
     path: '', // un chemin vide renverra vers '/'
     redirectTo: '/',
     pathMatch: 'full'
-  },
+  }, 
   {
     path: '', // la page principale utilisera le component suivant
     component: MeteoComponent
